@@ -1,0 +1,147 @@
+/* _content/KutuphaneOtomasyonu.Web/Areas/Ogrenci/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-mu6hq0x4po] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-mu6hq0x4po] {
+  color: #0077cc;
+}
+
+.btn-primary[b-mu6hq0x4po] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-mu6hq0x4po], .nav-pills .show > .nav-link[b-mu6hq0x4po] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-mu6hq0x4po] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-mu6hq0x4po] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-mu6hq0x4po] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-mu6hq0x4po] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-mu6hq0x4po] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/* _content/KutuphaneOtomasyonu.Web/Areas/Ogretmen/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-24xn5ej32v] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-24xn5ej32v] {
+  color: #0077cc;
+}
+
+.btn-primary[b-24xn5ej32v] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-24xn5ej32v], .nav-pills .show > .nav-link[b-24xn5ej32v] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-24xn5ej32v] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-24xn5ej32v] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-24xn5ej32v] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-24xn5ej32v] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-24xn5ej32v] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}
+/* _content/KutuphaneOtomasyonu.Web/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-xkwued271k] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-xkwued271k] {
+  color: #0077cc;
+}
+
+.btn-primary[b-xkwued271k] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-xkwued271k], .nav-pills .show > .nav-link[b-xkwued271k] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-xkwued271k] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-xkwued271k] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-xkwued271k] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-xkwued271k] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-xkwued271k] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}

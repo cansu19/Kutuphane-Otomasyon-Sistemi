@@ -1,0 +1,11 @@
+﻿@model List<KitaplikDto>
+
+<div class="bg-white py-2 collapse-inner rounded">
+    <h6 class="collapse-header">Kitaplığa Göre Kontrol</h6>
+    @foreach (var tur in Model)
+    {
+        <a>@Html.ActionLink(tur.Tur, "KitaplikDetay", "Ogretmen", new { id = tur.Id }, new { @class = "collapse-item" })</a>
+    }
+
+
+</div>

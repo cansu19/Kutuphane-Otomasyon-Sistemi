@@ -1,0 +1,91 @@
+﻿@model KitapAddDto
+
+
+<div class="container-xxl flex-grow-1 container-p-y">
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Kitap Yönetimi /</span> Kitaplar</h4>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card mb-4">
+                <h5 class="card-header"></h5>
+                @{
+                    var message = TempData["Message"];
+                    var messageType = TempData["MessageType"];
+                }
+
+                @if (message != null)
+                {
+                    <div class="alert alert-@messageType alert-dismissible fade show" role="alert">
+                        @message
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                }
+                <form asp-controller="Ogretmen" asp-action="Add" method="post" enctype="multipart/form-data">
+                    <div class="card-body">
+
+
+                        <div>
+                            <label class="form-label">Kitap Türü</label>
+                            <div class="form-group"></div>
+                            <select class="form-control" asp-for="KitaplikId" asp-items="@(new SelectList(Model.Kitapliks,"Id","Tur"))"></select>
+                            <span asp-validation-for="KitaplikId" class="text-danger"></span>
+
+                        </div>
+
+                        <div>
+                            <div class="form-group">
+                                <label asp-for="Ad" for="defaultFormControlInput" class="form-label">Kitap Adı</label>
+                                <input asp-for="Ad" type="text"
+                                       class="form-control"
+                                       id="defaultFormControlInput"
+                                       placeholder="Kitap adını giriniz."
+                                       aria-describedby="defaultFormControlHelp" />
+                                <div id="defaultFormControlHelp" class="form-text">
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Yazar" for="defaultFormControlInput" class="form-label">Yazar Adı</label>
+                                    <input asp-for="Yazar" type="text"
+                                           class="form-control"
+                                           id="defaultFormControlInput"
+                                           placeholder="Yazar adını giriniz."
+                                           aria-describedby="defaultFormControlHelp" />
+                                    <div id="defaultFormControlHelp" class="form-text">
+                                    </div>
+                                    <div class="form-group">
+                                        <label asp-for="Yayınevi" for="defaultFormControlInput" class="form-label">Yayınevi</label>
+                                        <input asp-for="Yayınevi" type="text"
+                                               class="form-control"
+                                               id="defaultFormControlInput"
+                                               placeholder="Yayınevini giriniz."
+                                               aria-describedby="defaultFormControlHelp" />
+                                        <div id="defaultFormControlHelp" class="form-text">
+                                        </div>
+                                <div>
+                                    <div class="form-group"></div>
+                                    <label asp-for="Ozet" for="defaultFormControlInput" class="form-label">Özet</label>
+                                    <textarea input asp-for="Ozet" type="text"
+                                              class="form-control mb-3"
+                                              id="defaultFormControlInput"
+                                              style="min-height:200px"
+                                              placeholder="Özet Giriniz"
+                                              aria-describedby="defaultFormControlHelp"></textarea>
+                                    <div id="defaultFormControlHelp" class="form-text">
+                                    </div>
+                                </div>
+                            </div><div>
+                            </div>
+                            <div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary m-2">Kaydet</button>
+                                </div>
+                            </div>
+                        </div>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+

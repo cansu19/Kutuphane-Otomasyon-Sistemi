@@ -1,0 +1,15 @@
+C:\Users\Cansu Arslanalp\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu.Entity\bin\Debug\net6.0\KutuphaneOtomasyonu.Entity.deps.json
+C:\Users\Cansu Arslanalp\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu.Entity\bin\Debug\net6.0\KutuphaneOtomasyonu.Entity.dll
+C:\Users\Cansu Arslanalp\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu.Entity\bin\Debug\net6.0\KutuphaneOtomasyonu.Entity.pdb
+C:\Users\Cansu Arslanalp\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu.Entity\bin\Debug\net6.0\KutuphaneOtomasyonu.Core.dll
+C:\Users\Cansu Arslanalp\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu.Entity\bin\Debug\net6.0\KutuphaneOtomasyonu.Core.pdb
+C:\Users\Cansu Arslanalp\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu.Entity\obj\Debug\net6.0\KutuphaneOtomasyonu.Entity.csproj.AssemblyReference.cache
+C:\Users\Cansu Arslanalp\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu.Entity\obj\Debug\net6.0\KutuphaneOtomasyonu.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Cansu Arslanalp\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu.Entity\obj\Debug\net6.0\KutuphaneOtomasyonu.Entity.AssemblyInfoInputs.cache
+C:\Users\Cansu Arslanalp\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu.Entity\obj\Debug\net6.0\KutuphaneOtomasyonu.Entity.AssemblyInfo.cs
+C:\Users\Cansu Arslanalp\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu.Entity\obj\Debug\net6.0\KutuphaneOtomasyonu.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Cansu Arslanalp\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu.Entity\obj\Debug\net6.0\KutuphaneOtomasyonu.Entity.csproj.CopyComplete
+C:\Users\Cansu Arslanalp\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu.Entity\obj\Debug\net6.0\KutuphaneOtomasyonu.Entity.dll
+C:\Users\Cansu Arslanalp\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu.Entity\obj\Debug\net6.0\refint\KutuphaneOtomasyonu.Entity.dll
+C:\Users\Cansu Arslanalp\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu.Entity\obj\Debug\net6.0\KutuphaneOtomasyonu.Entity.pdb
+C:\Users\Cansu Arslanalp\source\repos\KutuphaneOtomasyonu\KutuphaneOtomasyonu.Entity\obj\Debug\net6.0\ref\KutuphaneOtomasyonu.Entity.dll

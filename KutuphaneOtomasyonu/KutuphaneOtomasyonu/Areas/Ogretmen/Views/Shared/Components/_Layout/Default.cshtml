@@ -1,0 +1,11 @@
+﻿@model List<AppUserDto>
+
+<div class="bg-white py-2 collapse-inner rounded">
+    <h6 class="collapse-header">Öğrenci Kontrolü</h6>
+    @foreach (var user in Model)
+    {
+        <a>@Html.ActionLink(user.Username, "UserDetay", "Ogretmen", new { id = user.Id }, new { @class = "collapse-item" })</a>
+    }
+
+
+</div>

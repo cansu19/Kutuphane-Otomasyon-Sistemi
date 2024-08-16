@@ -1,0 +1,38 @@
+﻿@model OkunanKitaplarUpdateDto
+
+<div class="container-xxl flex-grow-1 container-p-y">
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Kitap Yönetimi /</span> Görüş Ekle/Güncelle</h4>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card mb-4">
+                <h5 class="card-header"></h5>
+
+                @if (TempData["Message"] != null)
+                {
+                    <div class="alert alert-@TempData["MessageType"] alert-dismissible fade show mt-3" role="alert">
+                        @TempData["Message"]
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                }
+
+                <form asp-controller="Ogrenci" asp-action="AddGorus" method="post">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label asp-for="Gorus" class="form-label">Görüş</label>
+                            <textarea asp-for="Gorus" class="form-control" rows="5" placeholder="Görüşünüzü yazın"></textarea>
+                        </div>
+
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="form-group mt-3">
+                            <button type="submit" class="btn btn-primary m-2">Kaydet</button>
+                            <a href="@Url.Action("Index", "Ogrenci", new { area = "Ogrenci" })" class="btn btn-secondary m-2">İptal</a>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

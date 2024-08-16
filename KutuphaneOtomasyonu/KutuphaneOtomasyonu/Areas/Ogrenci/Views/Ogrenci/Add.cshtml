@@ -1,0 +1,58 @@
+﻿   @using X.PagedList;
+@using X.Web.PagedList;
+ @model IPagedList<KitapDto>
+@{
+    Layout = "~/Areas/Ogrenci/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card shadow mb-4">   
+    <div class="card-body">
+        @if (TempData["Message"] != null)
+        {
+            var messageType = TempData["MessageType"]?.ToString() ?? "info";
+            var alertClass = messageType == "success" ? "alert-success" :
+            messageType == "danger" ? "alert-danger" :
+            messageType == "warning" ? "alert-warning" : "alert-info";
+
+            <div class="alert @alertClass alert-dismissible fade show" role="alert">
+                @TempData["Message"]
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        }
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Kitap Adı</th>
+                        <th>İşlemler</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Kitap Adı</th>
+                        <th>İşlemler</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @foreach (var x in Model)
+                    {
+                        <tr>
+                            <td>@x.Ad</td>
+                            <td>
+                                <form method="post" action="@Url.Action("Add", "Ogrenci", new { area = "Ogrenci" })">
+                                    <input type="hidden" name="kitapId" value="@x.Id" />
+                                    <button type="submit" class="btn btn-success btn-sm">Seç</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mt-4">
+        @Html.PagedListPager(Model, page => Url.Action("Add", new { page }))
+    </div>
+</div>

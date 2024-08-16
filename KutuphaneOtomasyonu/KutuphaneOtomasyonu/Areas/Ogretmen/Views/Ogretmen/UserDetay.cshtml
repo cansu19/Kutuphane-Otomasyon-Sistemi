@@ -1,0 +1,36 @@
+﻿@using X.PagedList;
+@using X.Web.PagedList;
+    @model IPagedList<OkunanKitaplarDto>
+@{
+    Layout = "~/Areas/Ogretmen/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card shadow mb-4">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Kitap Adı</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Kitap Adı</th>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    @foreach (var x in Model)
+                    {
+                        <tr>
+                            <td> @Html.ActionLink(x.Kitap.Ad, "KitapDetay", "Ogretmen", new { area = "Ogretmen", id = x.Kitap.Id }, null)</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mt-4">
+        @Html.PagedListPager(Model, page => Url.Action("UserDetay", new { page }))
+    </div>
+</div>

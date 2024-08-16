@@ -1,0 +1,25 @@
+﻿@using X.PagedList;
+@using X.Web.PagedList;
+@model IPagedList<OkunanKitaplarDto>
+@{
+    Layout = "~/Areas/Ogrenci/Views/Shared/_Layout.cshtml";
+}
+
+@foreach (var x in Model)
+{
+
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <p>
+                @x.Gorus
+            </p>
+            <div class="d-flex justify-content-end">
+                <h6 class="text-muted">- @x.AppUser.Username</h6>
+            </div>
+        </div>
+    </div>
+
+}
+<div class="d-flex justify-content-center mt-4">
+    @Html.PagedListPager(Model, page => Url.Action("KitapGorus", new { page }))
+</div>

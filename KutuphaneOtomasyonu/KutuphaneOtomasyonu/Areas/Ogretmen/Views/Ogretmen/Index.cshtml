@@ -1,0 +1,64 @@
+﻿@using X.PagedList;
+@using X.Web.PagedList;
+@model IPagedList<KitapDto>
+    @{
+        Layout = "~/Areas/Ogretmen/Views/Shared/_Layout.cshtml";
+    }
+
+    <div class="card shadow mb-4">
+            <div class="card-header py-3 d-flex justify-content-between align-items-center">
+                <h6 class="m-0 font-weight-bold text-primary">Kitaplar</h6>
+                <a href="@Url.Action("Add", "Ogretmen", new { area = "Ogretmen" })" class="btn btn-success btn-sm">Yeni Kitap Ekle</a>
+            </div>
+    @{
+        var message = TempData["Message"];
+        var messageType = TempData["MessageType"];
+    }
+
+    @if (message != null)
+    {
+        <div class="alert alert-@messageType alert-dismissible fade show" role="alert">
+            @message
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Kitap Adı</th>
+                            <th>Yazar</th>
+                            <th>Yayınevi</th>
+                            <th>İşlemler</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Kitap Adı</th>
+                            <th>Yazar</th>
+                            <th>Yayınevi</th>
+                            <th>İşlemler</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        @foreach (var kitap in Model)
+                        {
+                            <tr>
+                                <td> @Html.ActionLink(kitap.Ad, "KitapDetay", "Ogretmen", new { area = "Ogretmen", id = kitap.Id }, null)</td>
+                                <td>@kitap.Yazar</td>
+                                <td>@kitap.Yayınevi</td>
+                                <td>
+                                    <a href="@Url.Action("Update", "Ogretmen", new { id = kitap.Id })" class="btn btn-primary btn-sm">Güncelle</a>
+                                    <a href="@Url.Action("Delete", "Ogretmen", new { id = kitap.Id })" class="btn btn-danger btn-sm">Sil</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    <div class="d-flex justify-content-center mt-4">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+    </div>
+    </div>

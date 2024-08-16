@@ -1,0 +1,6 @@
+﻿@model List<OkunanKitaplarDto>
+
+    @foreach(var x in Model)
+    {
+    <td> @Html.ActionLink(x.Kitap.Ad, "KitapDetay", "Ogrenci", new { area = "Ogrenci", id = x.Kitap.Id }, null)</td>
+    }
